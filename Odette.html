@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <meta name="author" content="Joel Yeo" />
+    <meta name="description" content="Odette" />
+    <link rel="stylesheet" href="css/F&B.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/steaklogo.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="java/F&B.js"></script>
+    <title>Odette | Medium Well.</title>
+</head>
+<body>
+
+    <section w3-include-html="Header.html"></section>
+
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <section id="content">
+        <a href="http://www.odetterestaurant.com/" traget="_blank">
+            <img id="logo" src="images/Odette-logo.png"></a>
+
+
+            <img id="buildingpic" src="images/odette-home.jpg" title="Odette">
+
+
+            <p class="text" id="intro">
+
+                Two-Michelin starred Odette is a collaboration between Chef-Owner Julien Royer and The Lo & Behold Group.
+                Located at National Gallery Singapore, the restaurant serves Modern French cuisine guided by Royer’s lifelong respect for seasonality,
+                terroir and artisanal produce sourced from boutique producers aroundthe world. Odette is named in tribute to Royer’s grandmother who taught him how some of the most
+                remarkable dishes can come from the purest ingredients, and believed in ensuring that the fundamental pleasures of enjoying a meal are delivered in the most thoughtful,
+                welcoming and hospitable manner. This ethos has directed every aspect of the Odette experience.
+
+            </p>
+
+            <video src="Video/ODETTE.mp4" controls poster="images/videoposter.jpg" width="1000">
+                <p> HTML5 video is not supported on your browser</p>
+            </video>
+
+
+
+            <p class="FR">Top Food Recommendations</p>
+
+
+        <section id="all">
+            <img id="FoodImage" src="images/o1.png" title="Pine-Smoked Organic Egg">
+
+
+            <article class="text" id="FoodDes">
+                <p class="text " id="FoodName1">1. Pine-Smoked Organic Egg   </p>
+
+                There was a slightly different way of smoking the eggs – pine needles were used instead,
+                with the addition of home-made pine oil to infuse the eggs.The eggs were still poached at a precise 63.7 degrees for 55 minutes,
+                presented in a similar egg tray with dry ice for dramatic effects.The egg was then poured on the plate with truffle shavings,
+                mushrooms and duck pancetta and Forgotten vegetables. Simple and brilliant at the same time.
+            </article>
+        </section>
+        <cite>Photo By DanielFoodDiary</cite>
+
+
+        <section id="all">
+
+            <img id="FoodImage" src="images/o2.png" title="Beef Tartare"> 
+
+
+            <article class="text" id="FoodDes">
+                <p class="text " id="FoodName1">2. North Highlight Beef Tartare</p>
+
+                The North Highlight Beef Tartare was wonderfully excellent. The beef used was Scottish grass-fed beef, selected for its pure,
+                clean flavours, then simply seasoned with smoked bone marrow. The entire dish comprised of many ingredients that all came well together
+                , as though they were meant for one another – paper-thin petals of pickled kohlrabi (a German turnip) for gentle crunch,
+                grain mustard ice cream which gave a contrasting cold sensation, and a small side of burnt bread topped with mustard seeds.
+            </article>
+        </section>
+        <cite>Photo By DanielFoodDiary</cite>
+
+        <section id="all">
+            <img id="FoodImage" src="images/o3.jpg" title="Amuse bouche">
+
+            <article class="text" id="FoodDes">
+                <p class="text " id="FoodName3">3.  Amuse bouche</p>
+
+                The amuse bouche was something I enjoyed tremendously, even surpassing some of my affection for the mains.
+                The mushroom tea with ceps sabayon was such a delight which warmed our hearts and the creaminess left us yearning more of it.
+
+            </article>
+        </section>
+        <cite>Photo By DanielFoodDiary</cite>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Location</th>
+                            <th scope="col">Telephone</th>
+                            <th scope="col">Opening Hours</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+
+                            <th colspan="1" rowspan="2" scope="row">Odette Restaurant <br /> 1 St Andrew’s Road #01-04, S 178957</th>
+                            <td colspan="1" rowspan="2"> +65 6385 0498</td>
+                            <td>Lunch : 12.00pm - 1.30pm (last seating) </td>
+                        </tr>
+
+                        <tr>
+                            <td>Dinner: 7.00pm - 9.00pm (last seating)</td>
+                        </tr>
+                    </tbody>
+
+
+                </table>
+
+
+        <section>
+            <input type="button" id="btnRes" value="Reservation" />
+        </section>
+
+                <section id="overlay" class="glass" style="display:none;"></section>
+                <section id="dialog" class="popup">
+                    <form>
+                        <a href="#" id="btnClose">X</a>
+                        <h2>Book your table</h2>
+                        <fieldset id="bookingdetails">
+                            <legend>BOOKING DETAILS</legend>
+
+                            <p>
+                                Seats needed: <br />
+                                <select id="school" onclick="" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6 or more</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                Date:
+                                <br />
+                                <input type="date" name="Date" min="2018-01-01" max="2018-12-31" placeholder="mm/dd/yy" required />
+                                <br />
+
+                                Time:
+                                <br />
+                                <input type="time" name="Time" min="10:00:00" max="22:00:00" step="15" placeholder="hh:mm:ss AM" required />
+                            </p>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>PERSONAL DETAILS</legend>
+
+                            <label for="Name">Name:</label>
+                            <br />
+                            <input id="Name" type="text" placeholder="Enter Name" autocomplete="on" required>
+                            <br />
+
+                            <label for="Phone">Phone Number:</label>
+                            <br />
+                            <input id="Phone" type="text" placeholder="Enter Phone Number" pattern="  [89]\d{7}" required>
+                            <br />
+                            <label for="Email">Email:</label>
+                            <br />
+                            <input id="Email" type="text" placeholder="Enter Email Address" required>
+
+                        </fieldset>
+
+                        <label>Do you want to sign up for our newsletter ?</label>
+                        <br/>
+                        <input type="radio" name="Small" value="Small"  />Yes
+                        <input type="radio" name="Medium" value="Medium" />No
+                        <br/>
+
+                        <input id="btnSubmit" type="button" value="Submit" />
+
+
+                    </form>
+
+                </section>
+
+
+</section>
+
+
+
+
+    <script src="java/F&B.js"></script>
+
+    <section w3-include-html="Footer.html"></section>
+
+    <script>
+        w3.includeHTML();
+    </script>
+
+
+</body>
+</html>

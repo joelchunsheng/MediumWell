@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="css/F&B.css">
+    <meta name="author" content="Joel Yeo" />
+    <meta name="description" content="Pacamara" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/steaklogo.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="java/F&B.js"></script>
+    <title>Pacamara | Medium Well.</title>
+</head>
+<body>
+
+    <section w3-include-html="Header.html"></section>
+
+    <script>
+        w3.includeHTML();
+    </script>
+
+
+    <section id="content">
+        <a href="http://pacamara.sg/" traget="_blank">
+            <img id="logo" src="images/Pacamara-Logo.png"> </a>
+
+            <img id="buildingpic" src="images/pacabuilding.jpg" title="Pacamara">
+            <p class="text" id="intro">
+                Adorned with a minimalist approach, Pacamara Boutique Coffee Roasters focuses its emphasis on the essence of coffee without distractions.
+                Pacamara Boutique Coffee Roasters is styled after the Melbourne / Australian cafes, being neat, clean, and bright. Colours of white and wood lend a cozy,
+                clean feel, and the neatly laid out furniture within the spacious, naturally brightly lit interior is welcoming. With minimalist decor and clean lines,
+                Pacamara Boutique Coffee Roasters just makes you want to linger over coffee and pastries with friends.
+            </p>
+
+            <p class="FR">Top Food Recommendations</p>
+
+        <section id="all">
+            <img id="FoodImage" src="images/paca1.jpg" title="Lemongrass Hotcakes">
+
+
+            <article class="text" id="FoodDes">
+                <p class="text " id="FoodName1">1. Lemongrass Ricotta Hotcakes   </p>
+
+                The Lemongrass Ricotta Hotcakes features a stack of lovely lemongrass infused hotcakes / pancakes,
+                soft, moist, and fluffy in texture, though the lemongrass taste is rather faint, overwhelmed by the much stronger flavours on the plate.
+                Topped with a sweet sour mixed berry compote (strawberry, blueberry, blackberry, raspberry), crumbly ricotta cheese, and served with sweet,
+                thick maple syrup on the side. Tasty and filling, highly recommended!
+
+            </article>
+        </section>
+
+            <section id="all">
+                <img id="FoodImage" src="images/paca2.jpg" title="Duck Confit Hash">
+
+
+                <article class="text" id="FoodDes">
+                    <p class="text " id="FoodName2">2.  Duck Confit Hash        </p>
+
+                    The portion was really generous with not just its duck confit. It was served with a base of potato rosti, mushrooms, kenya beans, poached eggs
+                    and amazing fluffy brioche toasts! It’s like an eggs benedict but 10x better and more value for money! I loved the flavor profile in this dish,
+                    as it was really a different experience with every mouthful!
+
+                </article>
+            </section>
+        <cite>Photo By ExplodingBelly</cite>
+
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Location</th>
+                            <th scope="col">Telephone</th>
+                            <th scope="col">Opening Hours</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+
+                            <th scope="row">Pacamara Boutique Coffee Roasters <br />  185 Upper Thomson Road, S 574333</th>
+                            <td>Sorry, we dont have a contact number</td>
+                            <td>Mondays - Sunday : 9am - 11pm</td>
+
+
+                        </tr>
+                    </tbody>
+
+
+                </table>
+
+
+                <section>
+                    <input type="button" id="btnRes" value="Reservation" />
+                </section>
+
+                <section id="overlay" class="glass" style="display:none;"></section>
+                <section id="dialog" class="popup">
+                    <form>
+                        <a href="#" id="btnClose">X</a>
+                        <h2>Book your table</h2>
+                        <fieldset id="bookingdetails">
+                            <legend>BOOKING DETAILS</legend>
+
+                            <p>
+                                Seats needed: <br />
+                                <select id="school" onclick="" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6 or more</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                Date:
+                                <br />
+                                <input type="date" name="Date" min="2018-01-01" max="2018-12-31" placeholder="mm/dd/yy" required />
+                                <br />
+
+                                Time:
+                                <br />
+                                <input type="time" name="Time" min="10:00:00" max="22:00:00" step="15" placeholder="hh:mm:ss AM" required />
+                            </p>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>PERSONAL DETAILS</legend>
+                            <label for="Name">Name:</label>
+                            <br />
+                            <input id="Name" type="text" placeholder="Enter Name" autocomplete="on" required>
+                            <br />
+
+                            <label for="Phone">Phone Number:</label>
+                            <br />
+                            <input id="Phone" type="text" placeholder="Enter Phone Number" pattern="  [89]\d{7}" required>
+                            <br />
+                            <label for="Email">Email:</label>
+                            <br />
+                            <input id="Email" type="text" placeholder="Enter Email Address" required>
+
+
+                        </fieldset>
+                        <label>Do you want to sign up for our newsletter ?</label>
+                        <br />
+                        <input type="radio" name="Small" value="Small" />Yes
+                        <input type="radio" name="Medium" value="Medium" />No
+                        <br />
+
+                        <input id="btnSubmit" type="button" value="Submit" />
+
+
+                    </form>
+
+                </section>
+
+
+</section>
+
+
+
+
+    <script src="java/F&B.js"></script>
+
+    <section w3-include-html="Footer.html"></section>
+
+    <script>
+        w3.includeHTML();
+    </script>
+
+</body>
+</html>

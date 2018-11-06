@@ -1,0 +1,263 @@
+﻿body {
+    background-color: #202020;
+}
+
+#content {
+    background-color: whitesmoke;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+
+#logo {
+    width: 20%;
+    margin-left: 500px;
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+#buildingpic {
+    width: 60%;
+    margin-left: 255px;
+    display: block;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    color: #636363;
+}
+
+#intro {
+    margin: 10px;
+    padding: 5px;
+    clear: both;
+}
+
+.FR {
+    font-size: 20px;
+
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.5px;
+    color: #636363;
+    text-decoration: underline;
+    text-align:center;
+}
+
+#FoodImage{
+    padding:30px;
+    width:260px;
+
+}
+
+#FoodDes {
+    float: right;
+    max-width: 650px;
+    margin-right: 20%;
+    margin-top: 50px;
+
+}
+
+#all {
+    display: block;
+    margin: 0 auto;
+}
+
+
+#FoodName1 {
+
+    margin-right:54%;
+    text-decoration:underline;
+    max-width:50%;
+}
+
+#FoodName2 {
+
+    margin-right: 64%;
+    text-decoration: underline;
+
+}
+
+#FoodName3 {
+
+    margin-right: 78%;
+    text-decoration: underline;
+}
+
+
+.glass {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(225,225,225,.7);
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+}
+
+/*.dialog {
+    height: 125px;
+    width: 220px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: white;
+}*/
+
+.popup {
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 530px;
+    top: 5%;
+    left: 35%;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    z-index: 100;
+    font-size: 10pt;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+form {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+fieldset{
+    margin: 10px;
+}
+
+#bookingdetails input {
+    width: 200px;
+}
+
+#bookingdetails select {
+    width: 200px;
+}
+
+input[type=text] {
+    width: 200px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+}
+
+    input[type=text]:focus {
+        width: 350px;
+    }
+
+#btnSubmit {
+    border:1px solid black;
+    background-color: orange;
+    cursor: pointer;
+    padding:3px;
+
+}
+#btnClose {
+    margin-left: 370px;
+    padding:0px;
+    color:red;
+}
+
+
+
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+    color:#636363 ;
+    margin: auto;
+}
+
+thead th{
+    background-color: slategrey;
+    color:whitesmoke;
+}
+
+tr, td, th {
+    border: thin solid #636363;
+    padding: 10px;
+}
+
+tbody th:hover {
+    background-color: slategrey;
+    color: whitesmoke;
+}
+
+tbody td:hover{
+    background-color:slategrey;
+    color:whitesmoke;
+}
+
+
+#btnRes {
+    border: 2px solid black;
+    width: 250px;
+    height: 60px;
+    border-radius: 300px;
+    background-color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    display:block;
+    margin: 10px auto;
+}
+
+    #btnRes:hover {
+        background-color: black;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+cite{
+    margin-left:10px;
+}
+
+
+video {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+#gallery {
+    display:block;
+    margin: 0 auto;
+    width: 40%; 
+}
+
+
+
+section.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 150px;
+    max-width:500px;
+}
+
+    section.gallery:hover {
+        border: 1px solid;
+        opacity:0.5;
+    }
+
+    section.gallery img {
+        width: 100%;
+        height: auto;
+    }
+

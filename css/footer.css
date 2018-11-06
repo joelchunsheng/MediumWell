@@ -1,0 +1,15 @@
+﻿footer {
+    background-color: #202020;
+    text-align: center;
+}
+#footerhead {
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-size:30px;
+    color:whitesmoke;
+}
+
+#developed{
+    color:whitesmoke;
+    font-size: 10px;
+}
+

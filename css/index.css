@@ -1,0 +1,162 @@
+﻿body {
+    background-color: #202020;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*#pad{
+    margin-top:10px;
+}*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 50%;
+    /*position: relative;*/
+    margin: auto;
+
+
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+#Hightlight {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+#HightlightHeading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    color: whitesmoke;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-bottom: 1px solid whitesmoke;
+    line-height: 0.1em;
+}
+
+#HightlightHeading span {
+        background: #202020;
+        padding: 5px;
+}
+
+
+#H1 img {
+    width: 60%;
+    display: block;
+    margin: 50px auto;
+
+}
+
+#H1TxtBkGnd {
+    background-color: #202020;
+    opacity: 0.7;
+    /*background-color:blue;*/
+    /*width: 350px;
+    height: 393px;*/
+    width:28%;
+    height:67%;
+    margin-top: -443px;
+    margin-left: 650px;
+    position: absolute;
+    /*position:relative;*/
+
+}
+
+#H1txtContainer {
+    padding: 10px;
+    margin-top: -443px;
+    margin-left: 650px;
+    /*width: 350px;
+    height: 393px;*/
+    width:28%;
+    height:60%;
+    color: white;
+    z-index: 100;
+    position: absolute;
+
+
+}
+
+#H1txtHeading {
+    font-size: 30px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#H1ReadMore{
+    border: 1px solid white;
+    color:white;
+    padding: 5px;
+    text-decoration:none;  /*remove underline*/
+}
+
+
+
+
+
+
+
